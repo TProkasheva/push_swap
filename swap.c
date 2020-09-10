@@ -16,7 +16,7 @@ void	swap(t_stack **head)
 {
 	t_stack *buf;
 
-	if ((*head) || (*head)->next)
+	if ((*head) && (*head)->next)
 	{
 		buf = (*head)->next;
 		(*head)->next = (*head)->next->next;
